@@ -23,4 +23,6 @@ Route::get('/login', function () {
     return view('Pengguna.login');
 });
 
+Route::get('/postlogin', 'LoginController@postlogin')->name('postlogin');
 Route::post('/postlogin', 'LoginController@postlogin')->name('postlogin');
+Route::get('/logout', 'LoginController@logout')->name('logout');
