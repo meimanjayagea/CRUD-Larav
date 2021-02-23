@@ -17,7 +17,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <a class="navbar-brand" href="#">Jogja Karir</a>
       <a class="btn btn-primary" href="{{route('postlogin')}}">Sign In</a>
     </div>
   </nav>
