@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
+use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/Pegawai', function () {
-    return view('Pegawai/Data-Pegawai');
+Route::get('/Beranda', 'BerandaController@index');
+
+Route::get('/login', function () {
+    return view('Pengguna.login');
 });
+
+Route::post('/postlogin', 'LoginController@postlogin')->name('postlogin');
