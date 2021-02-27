@@ -44,14 +44,14 @@
               </p>
             </a>
             <ul class="nav nav-treeview">
-              @if (auth()->user()->level=="admin")
+              {{-- @if (auth()->user()->level=="admin") --}}
               <li class="nav-item">
-                <a href="{{route('alamansatu')}}" class="nav-link active">
+                <a href="{{route('halamansatu')}}" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Halaman 1</p>
                 </a>
               </li>
-              @endif
+              {{-- @endif --}}
               <li class="nav-item">
                 <a href="{{route('halamandua')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
