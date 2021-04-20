@@ -14,6 +14,11 @@
           <img src="{{asset('assets/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
+          {{-- @if (Str::length(Auth::guard('pengguna')->user()) > )
+          <a href="#" class="d-block">{{Auth::guard('pengguna')->user()->name }}</a> 
+          @elseif (Str::length(Auth::guard('user')->user()) > 0)
+          <a href="#" class="d-block">{{Auth::guard('user')->user()->name }}</a> 
+          @endif --}}
           <a href="#" class="d-block">{{auth()->user()->name}}</a>
         </div>
       </div>
@@ -44,14 +49,14 @@
               </p>
             </a>
             <ul class="nav nav-treeview">
-              {{-- @if (auth()->user()->level=="admin") --}}
+              @if (auth()->user()->level=="admin")
               <li class="nav-item">
                 <a href="{{route('halamansatu')}}" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Halaman 1</p>
                 </a>
               </li>
-              {{-- @endif --}}
+              @endif
               <li class="nav-item">
                 <a href="{{route('halamandua')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>

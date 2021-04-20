@@ -16,8 +16,13 @@
   <!-- Navigation -->
   <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Jogja Karir</a>
-      <a class="btn btn-primary" href="{{route('postlogin')}}">Sign In</a>
+      <div class="col-md-7">
+        <a class="navbar-brand" href="#">Jogja Karir</a>
+      </div>
+      <div class="col-md-3 d-flex">
+        <a class="btn btn-primary mx-3" href="{{route('postlogin')}}">Sign In</a>
+        <a class="btn btn-primary" href="{{route('Registrasi')}}">Registrasi</a>
+      </div>
     </div>
   </nav>
 

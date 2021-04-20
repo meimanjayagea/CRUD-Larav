@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Auth\LoginController;
+
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/Registrasi', 'registerController@postRegistrasi')->name('Registrasi');
+Route::post('/CreateUser', 'registerController@CreateUser')->name('CreateUser');
+
 
 Route::get('/login', function () {
     return view('Pengguna.login');
